@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        
+        <p><a href="/utility/requestSync?agentUserId=82f453bd-86f4-45f3-a0fa-0daf4af3e655&async=false">RequestSync sync</a></p>
+
+        <p><a href="/utility/requestSync?agentUserId=82f453bd-86f4-45f3-a0fa-0daf4af3e655&async=true">RequestSync async</a></p>
+
+        <p><a href="/utility/query?agentUserId=82f453bd-86f4-45f3-a0fa-0daf4af3e655">Query</a></p>
+
+        <p><a href="/utility/sync?agentUserId=82f453bd-86f4-45f3-a0fa-0daf4af3e655">Sync</a></p>
+
+        <hr/>
+        Set General Error:
+        <form action="/utility/generalerror" method="post">
+            <select id="error" name="error">
+                <option value=""></option>
+                <option value="IN_SOFTWARE_UPDATE">IN_SOFTWARE_UPDATE</option>
+                <option value="ACTION_NOT_AVAILABLE">ACTION_NOT_AVAILABLE</option>
+                <option value="DEVICE_BUSY">DEVICE_BUSY</option>
+                <option value="DEVICE_NOT_READY">DEVICE_NOT_READY</option>
+                <option value="DEVICE_TAMPERED">DEVICE_TAMPERED</option>
+                <option value="NEEDS_SOFTWARE_UPDATE">NEEDS_SOFTWARE_UPDATE</option>    
+            </select>
+            <input type="submit" value="Execute"/>
+        </form>
+
+        <hr/>
+        Valore PPM del sensore di CO:
+        <form action="/utility/setcosensorvalue" method="post">
+            <input type="text" id="value" name="value" placeholder="CO Sensor Value"/>  
+            <input type="submit" value="Execute"/>
+        </form>
+
+        <hr/>
+        Set Lampada Exception:
+        <form action="/utility/setlightexception" method="post">
+            <select id="exception" name="exception">
+                <option value=""></option>
+                <option value="LOW_BATTERY">LOW_BATTERY</option>
+            </select>
+            <input type="submit" value="Execute"/>
+        </form>
+
+    </body>
+</html>
