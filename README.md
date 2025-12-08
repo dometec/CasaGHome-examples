@@ -11,7 +11,7 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 ### Expose the Application Publicly
 
-The Google Home platform requires a publicly reachable endpoint. To achieve this quickly, we can use [ngrok](https://ngrok.com/) (or [localtunnel](https://localtunnel.app/), [tunnelmole](https://tunnelmole.com/) or tool like that).
+The Google Home platform requires a publicly reachable endpoint. To achieve this quickly, we can use [ngrok](https://ngrok.com/) (or [localtunnel](https://localtunnel.app/), [tunnelmole](https://tunnelmole.com/), [ssi.sh](https://docs.ssi.sh/), [tunnl.gg](https://tunnl.gg/) or tool like that).
 
 Install and start ngrok with:
 ```bash
